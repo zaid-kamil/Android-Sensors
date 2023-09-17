@@ -176,7 +176,8 @@ fun AppNavigation() {
             enterTransition = {
                 slideIntoContainer(
                     AnimatedContentTransitionScope.SlideDirection.Up,
-                    animationSpec = tween(500, easing = EaseInOutBounce)
+                    animationSpec = tween(200, easing = EaseInOutBounce)
+//                    times
                 )
             }
             ) {
@@ -204,7 +205,9 @@ fun DetailScreen(
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
-            Text(text = sensor?.stringType ?: "Unknown❌")
+            Text(text = sensor?.stringType ?: "Unknown❌",
+                style = MaterialTheme.typography.titleMedium)
+//            text style
         }
     }
 }
