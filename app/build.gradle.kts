@@ -65,6 +65,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
     // navigation
     implementation("androidx.navigation:navigation-compose:2.7.2")
+    // compose sensor 2
+    implementation("com.mutualmobile:composesensors:1.1.1")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
